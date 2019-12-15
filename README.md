@@ -40,10 +40,18 @@
 
 ```
 
-## 해당 강의 유튜브 링크
-## [JavaScript](https://www.youtube.com/watch?v=ImTA5-r9TNc&list=PLuHgQVnccGMDTAQ0S_FYxXOi1ZJz4ikaX)
 
-## 수강 내역
+
+
+
+## 해당 강의 유튜브 링크
+[JavaScript](https://www.youtube.com/watch?v=ImTA5-r9TNc&list=PLuHgQVnccGMDTAQ0S_FYxXOi1ZJz4ikaX)
+
+
+
+
+
+## 내 수강 내역
 * JavaScript 기본 수업
   * JavaScript를 로드
     * inline 방식
@@ -62,6 +70,8 @@
 
 
 
+
+## 수강률 테이블
 JavaScript학습기록|발전|믿음|완강률|
 ---|---|---|---|
 2019.12.15|prompt까지 학습|나는 무조건 성공한다.|11.82%|
@@ -69,6 +79,10 @@ JavaScript학습기록|발전|믿음|완강률|
 
 
 
+
+## 믿음 신뢰
 > 할 수 없는 것은 없다 아직 시작하지 않았을 뿐. 
+
 > 또한 완강은 끝이 아니라 작업의 시작이다. 
+
 **초석을 다졌으면 건물을 올리자.**
