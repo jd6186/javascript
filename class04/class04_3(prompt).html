@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<!-- prompt란?
+	내가 설정한 인자값을 위에 띄우고 해당 인자값에 대한 피드백을 사용자로부터 얻는 텍스트필드가 존재하는게 prompt창이다.
+
+	 -->
+	<input type="button" value="prompt" onclick="func_prompt()" />
+	<script type="text/javascript">
+		function func_prompt(){
+			if(prompt('id?') === '동욱'){  // 프롬프트 창에 사용자 피드백으로 입력되는 값이 '동욱'이라고 입력이 되면 true 아니면 false
+				alert('welcome');
+			} else {
+				alert('fail');
+			}
+			// 작동 원리는 class04_2와 동일하다.
+		}
+
+
+	</script>
+</body>
+</html>

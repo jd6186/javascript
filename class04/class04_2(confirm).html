@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<input type="button" value="confirm" onclick="func_confirm()" />
+	<script type="text/javascript">
+		function func_confirm(){ 
+		// confirm이라는 기능은 콘솔창에서 내가 confirm을 통해 문자를 입력하면 인자로 전달된 문자가 화면에 뜨게 되고 확인과 취소 버튼이 나온다. 이 때 확인 버튼은 true값을 리턴하고 취소는 false값을 리턴한당
+			
+			// 이건 그 특징을 이용한 if구문이다.
+			// 간단하게 살펴보면 컨펌값에서 트루값이 나오게 되면 'OK?' 값이 트루가 나오겠지? 그럼 if(true) 가 되니까 if구문 안에 기능들이 실행된다.
+			// 하지만 confirm이 취소를 눌러서 false라면?? if(false)가 되면서 예외구문을 처리하는 else로 이동하고 else구문안에 기능들을 실행하게 된다.
+			if (confirm('OK?')) { 
+				alert('OK!');
+			} else {
+				alert('cancle');
+			} // end if
+		} // end funtion
+
+
+	</script>
+</body>
+</html>

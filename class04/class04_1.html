@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<input type="button" value="alert" onclick="alertfunc('Hello World')" />
+</head>
+<body>
+	<script type="text/javascript">
+		// alert는 이런식으로 함수형식으로 만들어도 결국 최초 '1' 이라는 경고매시지만 도출시키고 이후 내가 '확인' 버튼을 누르기 전 까진 다음작업을 진행하지 않고 멈춰버린다는 특징이 있다.
+		// 다만 class04와 차이점은 프로그램이 거기서 끝나는게 아니고 '확인' 버튼을 누르면 그 때마다 함수값 내부에 있는 값들을 하나씩 출력해낸다라는 차이가 있다.
+		function alertfunc(){  
+			alert(1);
+			alert(2);
+			alert(3); 
+		}
+
+	</script>
+</body>
+</html>
