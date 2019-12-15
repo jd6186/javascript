@@ -1,5 +1,9 @@
 # 생활코딩 JavaScript for Web Browser 과정
 ## 과정을 따라가면서 나만의 기록을 남기는 Repositorie
+
+
+
+## 기록을 남기는 방식(예제 class01)
 ```javascript
 
 <html>
