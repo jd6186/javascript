@@ -70,6 +70,18 @@
 		// ?id=1 = search
 		// #hash = hash
 
+
+
+		//여기서 만약에 해당 홈페이지에 URL을 바꿔주고 싶다면?
+		// 아래 코드들은 현재 문서를 'http://donguk.net'으로 이동시킨다.
+		location.href = 'http://donguk.net'; // but 이게 좀더 명시적임
+		location = 'http://donguk.net';
+
+		// 만약에 현재 웹페이지의 내용을 리로드 하고 싶다.
+		location.href = location.href
+		//이렇게 해주면 현재 URL주소를 현재 URL주소로 바꿔주니까 리로드 되는 효과가 있다.
+		//하지만 더 간편하게 하려면 아래처럼 로케이션의 객체를 활용해주면 된다.
+		location.reload();
 	</script>
 </body>
 </html>
