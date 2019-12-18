@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		// 학습내용
+		// 1. Location 객체란 무엇인가?
+		// location객체는 현재 브라우저의 창에 열려 있는 문서의 URL을 알려주는 문서
+		// 오브젝트 모델에서 자바스클립트가 브라우저를 제어하기 위해서는 모든것이 다 객체화 되어있어야한다.
+		// 보이지 않는 정보도 객체화 될 수 있다. location객체도 그 중 하나.
+
+		// 2. Location객체 사용방법
+		// 현재 문서의 URL을 알아내는 방법은 크게 두가지 
+		// 1) 콘솔에서  console.log(location.toString(), location.href); 라고 입력하면 뜬다.
+		// 2) html문서에서 스크립트 내부에  console.log(location.toString(), location.href); 입력해도 똑같이 뜬다.
+		console.log(location.toString(), location.href);
+		// 이렇게 ,를 통해 인자를 연속해서 입력하게 되면 앞에꺼가 실행되자마자 뒤에 내용이 바로 실행된다.
+
+
+		// 3. Locatino 객체 실행결과(브라우저 콘솔창에 뜬다.)
+		// 실행결과 : 두가지 > 두가지 다 같은값이 나오지만 2번이 더 선호됨
+		// 1) location.toString() 내용
+		// file:///C:/Users/user/Desktop/my_workspace/javascript/class05/class05_Location.html 
+		// 2) location.href 라는 프로펄티에 접근한 내용
+		// file:///C:/Users/user/Desktop/my_workspace/javascript/class05/class05_Location.html
+
+
+		// 4. Location객체 그 자체에 대한 정보 보는법
+		// 브라우저의 console창에 console.log(location); 이라고 하면 Location객체에 대한 다양한 정보를 볼 수 있다.
+		// 하지만 그냥 console.log()로 출력하지 않고 alert로 alert(location)하게 되면 현재 URL주소가 경고창으로 출력되어 버린다. 왜냐하면 alert자체는 문자화된 객체만 출력할 수 있다. 그래서 location의 문자화된 객체인 주소값이 출력되는 것이다. 이 때의 값은 location.toString()의 값과 동일하다. 따라서 반드시 console.log()로 해야 볼 수 있다. 
+
+
+		// 5. 그럼 Location의 protocol 확인 방법은?
+		console.log(location.protocol);
+		// 이 결과 값으로는 현재 이 브라우저 창의 타입이 출력된다.
+		// 지금 나는 file: 이 뜰거고 웹브라우저들은 http: 또는 https: 등이 출력된다.
+
+		// 6. 그럼 Location의 host는 무엇인가?
+		console.log(location.host);
+		// host는 접속하고자 하는 서버가 있는데 서버를 이루고 있는 세상의 많은 컴퓨터들은 다 주소값을 가지고 있다. 그 주소값(컴퓨터)을 식별해 내는게 바로 저 host이다.
+
+
+		// 7. 그럼 Location의 port는 무엇인가?
+		console.log(location.port);
+		// host가 컴퓨터를 식별하는 것이었다면 그 컴퓨터에서 돌아가는 port는 서버 소프트웨어들을 식별하는 것이다.
+
+		// 8. 그럼 Location의 pathname은 무엇인가?
+		console.log(location.pathname);
+		// 웹서버에 접속하였을 때 웹 서버가 가지고 있는 어떤 구체적인 정보를 요청하는 정보가 pathname에 들어가는 정보이다.
+
+		// 8. 그럼 Location의 search은 무엇인가?
+		console.log(location.search);
+		// 이것은 접속하는 사이트에 ' ?id=10 ' 이라고 웹서버주소 제일 뒤에 붙혀주면 이서비스에 전달된 값 id 값이 10 이라는 뜻이다. 
+		// 이 ? 뒤에 따라오는 정보들을 알려주는 것이다. search다.
+
+
+		// 9. 그럼 Location의 hash는 무엇인가?
+		console.log(location.hash);
+		// 사이트 뒤에 #bookmark라고 입력하면 그 입력된 값(#bookmark)을 출력한다. 즉, #이후에 나온 것들을 다 출력한다.
+
+
+		// 그래서 정리를 쭉 해보면
+		// https://opentutorials.org:80/module/1?id=1#hash
+		// 라는 URL이 있을 때 이 사이트가  opentutorials.org라고만 나와있는데 다른 값을 알고 싶잖아? 그럼 밑에 있는 기능들을 활용하면 되 위에서 배운 것 처럼
+		// https: = protocol
+		// opentutorials.org = host
+		// 80 = port
+		// model/1 = pathname
+		// ?id=1 = search
+		// #hash = hash
+
+	</script>
+</body>
+</html>
