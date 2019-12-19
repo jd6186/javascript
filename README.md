@@ -76,6 +76,10 @@
   * Location
     * 문서의 주소정보 알아내기
     * 문서의 주서정보 변경하기
+  * Navigator
+    * 크로스 브라우징이란?
+    * Navigator객체란?
+    * 기능 테스트
 
 * JavaScript를 이용한 실습
 
